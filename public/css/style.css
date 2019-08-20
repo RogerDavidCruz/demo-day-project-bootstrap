@@ -9,7 +9,7 @@
 /* ----------------------------------
 
 Table of contents
-        
+
     01. Basic
     02. Section heading
     03. Banner
@@ -26,9 +26,9 @@ Table of contents
     14. Blog
     15. Countdown coming soon page
     16. Footer
-    
+
 ---------------------------------- */
-/*============================== 
+/*==============================
     Basic
 ================================*/
 /* loader */
@@ -302,7 +302,7 @@ a:hover, a:active {
     .title-font.large {
       font-size: 30px;
       line-height: 36px; } }
-/*============================== 
+/*==============================
     Banner
 ================================*/
 .banner-headline {
@@ -507,7 +507,7 @@ a:hover, a:active {
   .bg-vid {
     left: -16%;
     height: 100%; } }
-/*============================== 
+/*==============================
     Navbar
 ================================*/
 .navbar {
@@ -703,7 +703,7 @@ a:hover, a:active {
     color: #eb3007 !important; }
   .nav-scroll .navbar-collapse .btn.active {
     color: #fff !important; } }
-/*============================== 
+/*==============================
     Header
 ================================*/
 .header {
@@ -814,7 +814,7 @@ a:hover, a:active {
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 12px; } }
-/*============================== 
+/*==============================
     Sidebar
 ================================*/
 .side-menu {
@@ -1039,7 +1039,7 @@ a:hover, a:active {
   .side-menu .social-links a:hover {
     opacity: 0.65; }
 
-/*============================== 
+/*==============================
     Corner images
 ================================*/
 .corner-img {
@@ -1080,7 +1080,7 @@ a:hover, a:active {
   .about-corner {
     right: -59%;
     bottom: -15%; } }
-/*============================== 
+/*==============================
     About section
 ================================*/
 .callto-action-imgbox {
@@ -1158,7 +1158,7 @@ a:hover, a:active {
     height: 50px;
     font-size: 16px;
     line-height: 48px; } }
-/*============================== 
+/*==============================
     Feature boxes
 ================================*/
 .feature-box01 .feature-icon {
@@ -1188,7 +1188,7 @@ a:hover, a:active {
     width: 75px;
     height: 75px;
     line-height: 70px; } }
-/*============================== 
+/*==============================
     Delicious Section
 ================================*/
 .menu-row {
@@ -1287,7 +1287,7 @@ a:hover, a:active {
     margin-bottom: 10px; }
     .menu-row li:last-child {
       margin-bottom: 0; } }
-/*============================== 
+/*==============================
     Tabs
 ================================*/
 ul.resp-tabs-list {
@@ -1466,7 +1466,7 @@ h2.resp-accordion.resp-tab-active {
   .resp-tab-content {
     background-color: #fff;
     padding: 20px 15px; } }
-/*============================== 
+/*==============================
     Portfolio
 ================================*/
 .portfolio {
@@ -1495,8 +1495,12 @@ h2.resp-accordion.resp-tab-active {
     color: #fff; }
   .portfolio .item-img {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 100%;}
     .portfolio .item-img img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       width: 100%; }
     .portfolio .item-img:hover .item-img-overlay {
       opacity: 1;
@@ -1538,7 +1542,7 @@ h2.resp-accordion.resp-tab-active {
     z-index: 2;
     transform: translateY(10px); }
 
-/*============================== 
+/*==============================
     Owl Sliders
 ================================*/
 .owl-carousel .owl-item img {
@@ -1558,7 +1562,7 @@ h2.resp-accordion.resp-tab-active {
 @media screen and (max-width: 767px) {
   .testimonials .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 20px; } }
-/*============================== 
+/*==============================
     Blog
 ================================*/
 .blog .item {
@@ -1953,7 +1957,7 @@ h2.resp-accordion.resp-tab-active {
     padding: 20px; }
     .blogs .posts .post .content .post-title h5 {
       font-size: 22px; } }
-/*============================== 
+/*==============================
     Countdown coming soon page
 ================================*/
 .coming-soon .social-links li {
@@ -1996,7 +2000,7 @@ ul.countdown li {
 
   ul.countdown li span {
     font-size: 22px; } }
-/*============================== 
+/*==============================
     Footer
 ================================*/
 /* map */
