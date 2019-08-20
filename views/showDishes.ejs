@@ -1,167 +1,4 @@
-
-<section class="opBox"></section>
-
-<section class="mainBoxTwo">
-
-  <div class="page-header text-center">
-    <h1><span><i class="fas fa-utensils"></i></span> Which dish do you wish to try?</h1>
-    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-  </div>
-
-  <div class="col-sm-6">
-    <ul>
-      <h2>Choose a Dish</h2>
-      <% for(var i=0; i < meals.length; i++) {%>
-        <li class="meals">
-        <a href="/meal/<%= meals[i].idMeal %>">
-        <span><%= meals[i].strMeal %></span>
-        </a>
-        </li>
-        <% } %>
-      </ul>
-    </div>
-  </section>
-
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
-
-    <!-- metas -->
-    <meta charset="utf-8">
-    <meta name="author" content="ChitrakootWeb" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="keywords" content="Onepage Restaurant and Cafe Template" />
-    <meta name="description" content="Onepage Restaurant and Cafe Template" />
-
-    <!-- title  -->
-    <title>Cefrax - Restaurant and Cafe</title>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
-    <!-- plugins -->
-    <link rel="stylesheet" href="/css/plugins.css" />
-
-    <!-- core style css -->
-    <link rel="stylesheet" href="/css/style.css" />
-
-  </head>
-
-  <body>
-
-
-
-    <!-- start header -->
-    <%# <header class="header valign bg-img no-transition small-height-align mb-bg-position-x-center" data-scroll-index="0" data-overlay-dark="6" data-background="img/loginTest1.jpg" data-stellar-background-ratio="0.5"> %>
-
-    <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg alt-font">
-      <div class="container sm-padding-10px-tb sm-padding-15px-lr">
-
-        <!-- start logo -->
-        <a class="logo" href="javascript:void(0);" data-scroll-nav="0">
-          <img src="img/logo-light.png" alt="FooChoi - Inclusive Meals" title="FooChoi - Inclusive Meals">
-        </a>
-        <!-- end Logo -->
-
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar"></span>
-        </button>
-
-        <!-- navbar links -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="javascript:void(0);" data-scroll-nav="0">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="1">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="2">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="3">Our Chef</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="5">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="6">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="7">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn theme small" href="javascript:void(0);" data-scroll-nav="4">Book a Table</a>
-            </li>
-          </ul>
-        </div>
-        <!-- end navbar links -->
-
-      </div>
-      <a href="javascript:void(0)" class="sidemenu_btn sm-display-none" id="sidebar_toggle">
-        <span></span> <span></span> <span></span>
-      </a>
-    </nav>
-    <!-- end navbar  -->
-
-    <!-- start sidemenu -->
-    <div class="side-menu black alt-font">
-      <div class="inner-wrapper">
-        <span class="btn-close" id="btn_sidebar_colse"></span>
-        <nav class="side-nav width-100">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="javascript:void(0);" data-scroll-nav="0">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="1">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="2">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="3">Our Chef</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="5">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="6">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="7">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="side-footer width-100">
-          <div class="social-links">
-            <a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
-            <a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
-            <a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End sidemenu -->
-
-    <!-- Close Sidemenu -->
-    <a id="close_sidebar" href="javascript:void(0);"></a>
-    <!-- End Sidemenu -->
-
-    <%# </header> %>
-    <!-- end header -->
-
-
-
-
+<% include headerWithSlashLayout %>
 
     <!-- start tab section -->
     <section class="position-relative" data-scroll-index="2" data-overlay-dark="0" data-background="img/bg-section.jpg">
@@ -185,7 +22,6 @@
       <span class="display-block xs-display-none text-uppercase font-size12 sm-font-size11">Tasty and Fresh</span></li>
       <li> <span class="display-block xs-display-inline-block text-uppercase alt-font font-weight-700">Dinner</span>
       <span class="display-block xs-display-none text-uppercase font-size12 sm-font-size11">Tasty and Fresh</span></li>
-
       <li> <span class="display-block xs-display-inline-block text-uppercase alt-font font-weight-700">Snacks</span>
       <span class="display-block xs-display-none text-uppercase font-size12 sm-font-size11">Tasty and Fresh</span></li>
     </ul> %> -->
@@ -193,584 +29,70 @@
       <div>
 
 
-          <ul>
-            <h2>Choose a Dish</h2>
-            <% for(var i=0; i < meals.length; i++) {%>
-              <div class="row">
-
-                <!-- One Dish Section -->
-              <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-              <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Dishe Name
-              <div class="col-sm-6">
-
-              <li class="meals">
-              <a href="/meal/<%= meals[i].idMeal %>">
-              <span><%= meals[i].strMeal %></span>
-              </a>
-              </li>
-              </div>
-
-              </div>
-              <p class="width-95 xs-width-100">Dish ingredients OR prepaparation</p>
-              <div class="price-label bg-theme text-white alt-font"><span>$9</span></div>
-              <ul class="no-margin text-uppercase font-size12">
-              <li>
-              <span class="font-weight-700 text-theme-color">Ingredients</span>
-              <span class="border-left padding-10px-left margin-10px-left">Mixed field greens, cucumbers, and tomatoes</span>
-              </li>
-              </ul>
-              </div>
-              </div>
-
-
-              <!-- One Dish Section -->
-              <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-              <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Sample Test
-                <div class="col-sm-6">
-
-                <li class="meals">
-                <a href="/meal/<%= meals[i].idMeal %>">
-                <span><%= meals[i].strMeal %></span>
-                </a>
-                </li>
-                </div>
-
-              </div>
-              <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-              <div class="price-label bg-theme text-white alt-font"><span>$19</span></div>
-              <ul class="no-margin text-uppercase font-size12">
-              <li>
-              <span class="font-weight-700 text-theme-color">Ingredients</span>
-              <span class="border-left padding-10px-left margin-10px-left">Mashed Potatoes with homemade gravy and veggies</span>
-              </li>
-              </ul>
-              </div>
-              </div>
-              </div>
-
-              <% } %>
-
+        <ul>
+          <h2>Choose a Dish</h2>
+          <% for(var i=0; i < meals.length; i++) {%>
+            <div class="row">
+            <!-- One Dish Section -->
+            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
+            <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
+            <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Dishe Name
+            <div class="col-sm-6">
+            <li class="meals">
+            <a href="/meal/<%= meals[i].idMeal %>">
+            <span><%= meals[i].strMeal %></span>
+            </a>
+            </li>
+            </div>
+            </div>
+            <p class="width-95 xs-width-100">Dish ingredients OR prepaparation</p>
+            <div class="price-label bg-theme text-white alt-font"><span>$9</span></div>
+            <ul class="no-margin text-uppercase font-size12">
+            <li>
+            <span class="font-weight-700 text-theme-color">Ingredients</span>
+            <span class="border-left padding-10px-left margin-10px-left">Mixed field greens, cucumbers, and tomatoes</span>
+            </li>
             </ul>
+            </div>
+            </div>
+            <!-- One Dish Section -->
+            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
+            <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
+            <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Sample Test
+            <div class="col-sm-6">
+            <li class="meals">
+            <a href="/meal/<%= meals[i].idMeal %>">
+            <span><%= meals[i].strMeal %></span>
+            </a>
+            </li>
+            </div>
+            </div>
+            <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
+            <div class="price-label bg-theme text-white alt-font"><span>$19</span></div>
+            <ul class="no-margin text-uppercase font-size12">
+            <li>
+            <span class="font-weight-700 text-theme-color">Ingredients</span>
+            <span class="border-left padding-10px-left margin-10px-left">Mashed Potatoes with homemade gravy and veggies</span>
+            </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            <% } %>
+
+          </ul>
 
 
-
-
-
-          <div class="row">
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Turkey Pot Pie</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$32</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">homemade roast turkey and veggies, salad</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">California BLT</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$75</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">avocado, crispy iceberg lettuce and roma tomatoes</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Vegetarian Sandwich</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$86</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Mutton, Salad, Dosha, Butter, Strips</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Seared Scallops</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$89</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Juice lemons, capers, Heat pan, scallops.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div>
-
-          <div class="row">
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Bissell Breakfast</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$22</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Two eggs, bacon, toast, hashbrowns or grits</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Chicken and Waffle</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$53</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Chicken and a Belgian waffle with a sweet</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Francisco Benedictf</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$73</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Canadian bacon, sliced avocado, and tomato.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Cake Benedictc</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$87</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Two poached eggs and homemade crab cakes.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Protein Breakfast</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$99</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">bacon, sausage patties, sausage links, turkey</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-        <div>
-
-          <div class="row">
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Chicken With Pears</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$23</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">White wine, wedges, black pepper, chicken breasts</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Crumb Broccoli</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$34</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Unsalted butter, whole-wheat bread, parmesan</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Orzo Salad</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$45</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Asparagus, trimmed, red onion, vinaigrette</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Miso Dressing</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$45</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">white miso, cherry, grape, or pear tomatoes, halved </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Grilled Zucchini</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$67</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Medium zucchini, sliced lengthwise, red pepper</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-        <div>
-
-          <div class="row">
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Pork Medallions</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$23</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">maple syrup, Dijon mustard, tenderloin, trimmed</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Long Beans</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$57</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Ggreen beans, peanut oil, orange juice, butter</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Beer-Brined</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$36</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Black peppercorns, turkey, yellow onion,shallots</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Spicy Tropical</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$46</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Diced pineapple, kiwi, grated lime zest, sea salt</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Focaccia</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$67</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Olive oil, bread flour, Flaky sea salt, salt</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Raisin Pizza</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$89</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Apples, peeled ,diced, raw sugar, cinnamon</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div>
-
-          <div class="row">
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Broccoli Balls</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$10</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Grated broccoli, chopped onion, dried basil</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Grain Crackers</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$21</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">wheat flour, sesame seeds, mixed herbs like oregano</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 sm-margin-20px-bottom">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Momos</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$33</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Flour, pepper, broccoli, bean sprouts, chopped</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-                <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Chicken Poppers</div>
-                <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-                <div class="price-label bg-theme text-white alt-font"><span>$23</span></div>
-                <ul class="no-margin text-uppercase font-size12">
-                  <li>
-                    <span class="font-weight-700 text-theme-color">Ingredients</span>
-                    <span class="border-left padding-10px-left margin-10px-left">Boneless chicken, cubed, eggs, dried oregano</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
         </div>
       </div>
     </div>
-
   </div>
 
   <div class="corner-img menu-corner wow fadeInLeft" data-wow-duration="0.8s"><img src="img/menu-corner.png" alt="" /></div>
 
 </section>
 <!-- end tab section -->
-
-<!--  start delicious section -->
-<section class="bg-img cover-background" data-overlay-dark="3" data-background="img/delicious-back-img.png">
-
-  <div class="container">
-
-    <div class="delicious-menu">
-      <div class="owl-carousel owl-theme">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="border border-width-8 width-100 border-color-light-white">
-              <img src="img/drink.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="block border border-width-8 width-100 border-color-light-black padding-25px-top padding-30px-bottom md-padding-15px-tb padding-40px-lr md-padding-30px-lr xs-padding-20px-lr margin-thirteen-top md-margin-six-top">
-              <div class="title-font margin-15px-bottom">Drinks</div>
-
-              <ul class="menu-row">
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Soft Drink</p>
-                  <span class="price">$8</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Strawberry Lemonade</p>
-                  <span class="price">$14</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Chicken Clear Soup</p>
-                  <span class="price">$27</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Veg Hot N Sour Soup</p>
-                  <span class="price">$33</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Chicken & Sausage Gumbo</p>
-                  <span class="price">$16</span>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="border border-width-8 width-100 border-color-light-white">
-              <img src="img/main-course.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="block border border-width-8 width-100 border-color-light-black padding-25px-top padding-30px-bottom md-padding-15px-tb padding-40px-lr md-padding-30px-lr xs-padding-20px-lr margin-thirteen-top md-margin-six-top">
-              <div class="title-font margin-15px-bottom">Main Course</div>
-
-              <ul class="menu-row">
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Fish Tikka Masala</p>
-                  <span class="price">$24</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Tuna Salad Sandwich</p>
-                  <span class="price">$215</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Lightly Fried Shrimp</p>
-                  <span class="price">$134</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Basil Roasted Chicken</p>
-                  <span class="price">$389</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Mutton Food Inn Special</p>
-                  <span class="price">$877</span>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="border border-width-8 width-100 border-color-light-white">
-              <img src="img/desserts.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="block border border-width-8 width-100 border-color-light-black padding-25px-top padding-30px-bottom md-padding-15px-tb padding-40px-lr md-padding-30px-lr xs-padding-20px-lr margin-thirteen-top md-margin-six-top">
-              <div class="title-font margin-15px-bottom">Desserts</div>
-
-              <ul class="menu-row">
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Mini Cupcakes</p>
-                  <span class="price">$32</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Whole Pie Or Cake</p>
-                  <span class="price">$90</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Fruit with Ice Cream</p>
-                  <span class="price">$42</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">Chocolate Chip Cookies</p>
-                  <span class="price">$25</span>
-                </li>
-                <li>
-                  <div class="menu-item"><img src="img/dish.png" alt="" /></div>
-                  <p class="item-name">White Chocolate Bread Pudding</p>
-                  <span class="price">$29</span>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-</section>
-<!-- end delicious section -->
-
-
-
-
-
 
 <!-- all js include start -->
 
@@ -815,10 +137,6 @@
 
 <!-- wow js -->
 <script src="js/wow.js"></script>
-
-<!-- map -->
-<script src="js/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqFuLx8S7A8eianoUhkYMeXpGPvsXp1NM&amp;callback=initMap" async defer></script>
 
 <!-- custom scripts -->
 <script src="js/main.js"></script>
