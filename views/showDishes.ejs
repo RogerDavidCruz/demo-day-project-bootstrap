@@ -29,58 +29,37 @@
       <div>
 
 
-        <ul>
-          <h2>Choose a Dish</h2>
-          <% for(var i=0; i < meals.length; i++) {%>
-            <div class="row">
-            <!-- One Dish Section -->
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-            <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-            <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Dishe Name
-            <div class="col-sm-6">
-            <li class="meals">
-            <a href="/meal/<%= meals[i].idMeal %>">
-            <span><%= meals[i].strMeal %></span>
-            </a>
-            </li>
-            </div>
-            </div>
-            <p class="width-95 xs-width-100">Dish ingredients OR prepaparation</p>
-            <div class="price-label bg-theme text-white alt-font"><span>$9</span></div>
-            <ul class="no-margin text-uppercase font-size12">
-            <li>
-            <span class="font-weight-700 text-theme-color">Ingredients</span>
-            <span class="border-left padding-10px-left margin-10px-left">Mixed field greens, cucumbers, and tomatoes</span>
-            </li>
-            </ul>
-            </div>
-            </div>
-            <!-- One Dish Section -->
-            <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
-            <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
-            <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Sample Test
-            <div class="col-sm-6">
-            <li class="meals">
-            <a href="/meal/<%= meals[i].idMeal %>">
-            <span><%= meals[i].strMeal %></span>
-            </a>
-            </li>
-            </div>
-            </div>
-            <p class="width-95 xs-width-100">Cafe ut restaurants unde omnis iste natus error sit voluptatem totam rem aperiam, eaque illo inventore veritatis.</p>
-            <div class="price-label bg-theme text-white alt-font"><span>$19</span></div>
-            <ul class="no-margin text-uppercase font-size12">
-            <li>
-            <span class="font-weight-700 text-theme-color">Ingredients</span>
-            <span class="border-left padding-10px-left margin-10px-left">Mashed Potatoes with homemade gravy and veggies</span>
-            </li>
-            </ul>
-            </div>
-            </div>
-            </div>
-            <% } %>
 
-          </ul>
+          <h2>Choose a Dish</h2>
+          <div class="row">
+          <% for(var i=0; i < meals.length; i++) {%>
+
+              <!-- One Dish Section -->
+              <div class="col-md-6 margin-30px-bottom sm-margin-20px-bottom">
+                <div class="border position-relative padding-20px-all bg-white padding-70px-right md-padding-60px-right">
+                  <div class="alt-font font-weight-700 margin-8px-bottom xs-margin-5px-bottom">Dishe Name
+                    <div class="col-sm-6">
+                      <li class="meals">
+                        <a href="/meal/<%= meals[i].idMeal %>">
+                          <span><%= meals[i].strMeal %></span>
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                  <p class="width-95 xs-width-100">Dish ingredients OR prepaparation</p>
+                  <div class="price-label bg-theme text-white alt-font"><span>$9</span></div>
+                  <ul class="no-margin text-uppercase font-size12">
+                    <li>
+                      <span class="font-weight-700 text-theme-color">Ingredients</span>
+                      <span class="border-left padding-10px-left margin-10px-left">Mixed field greens, cucumbers, and tomatoes</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            <% } %>
+            </div>
+
 
 
 
