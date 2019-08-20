@@ -1,0 +1,313 @@
+/* Index EJS Template, Login EJS Template, Sign Up EJS Template */
+html{
+  font-size: 10px;
+}
+
+body{
+  height:1696px;
+}
+
+.opBox{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  opacity: .5;
+  z-index: 1;
+  position: fixed;
+  position: cover;
+}
+
+/* .cuisineFinderTitle{
+  font-size: 10rem;
+} */
+
+
+/* Question styling */
+.questionAllergies{
+  font-size: 5rem;
+}
+
+.tiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cuisineTitle{
+  display: block;
+}
+
+.trashIcon{
+  display: inline-block;
+}
+
+.cuisineTypes{
+  display: flex;
+
+}
+
+ul, ol {
+    width: 75%;
+    margin-left: 0%;
+}
+
+button{
+  color: black;
+  border: 2px solid black;
+  background-color: lightgray;
+  border-radius: 5%;
+}
+
+li{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 2rem;
+  color: white;
+}
+
+label{
+  font-size: 2rem;
+  color: white;
+}
+
+
+.col-sm-offset-3 {
+    margin-left: 25%;
+    margin-top: 10rem;
+}
+
+#indexPage{
+  word-wrap:break-word;
+  /* height: 100%; */
+  width: 100%;
+  background-image: url(img/loginTest1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.mainButton {
+    background-color: silver;
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 20%;
+    text-decoration-line: none;
+    color: black;
+}
+
+.mainBox {
+    height: 100%;
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 35%;
+    padding-right:35%;
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+
+.mainBoxTwo {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+}
+
+.profileMainBox {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+}
+
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    z-index: 2;
+}
+
+h2, h3 {
+    font-size: 3rem;
+    color: white;
+}
+
+.container{
+  width:100%;
+  padding: 0%;
+}
+
+#typedSub{
+  min-height: 8rem;
+  margin-top: 0;
+}
+
+a{
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.col-sm-6 {
+    width: 50%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#loginPage{
+  word-wrap:break-word;
+  width: 100%;
+  background-image: url(img/loginTest6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
+#signupPage{
+  word-wrap:break-word;
+  width: 100%;
+  background-image: url(img/loginTest4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#mealPage{
+  word-wrap:break-word;
+  /* height: 100%; */
+  width: 100%;
+  background-image: url(img/plate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#profilePage{
+  word-wrap:break-word;
+  /* height: 100%; */
+  width: 100%;
+  background-image: url(img/loginTest4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#showDishes{
+  word-wrap:break-word;
+  /* height: 100%; */
+  width: 100%;
+  background-image: url(img/table.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#showDishes{
+  word-wrap:break-word;
+  /* height: 100%; */
+  width: 100%;
+  background-image: url(img/fork-and-knife.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cuisinesPage{
+  word-wrap:break-word;
+  /* height: 100%; */
+  width: 100%;
+  background-image: url(img/table.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.indexLeft{
+  width: 50%;
+  float: left;
+}
+
+.indexRight{
+  width: 50%;
+  float: left;
+  color: black;
+}
+
+img {
+    vertical-align: middle;
+    width: 50%;
+    display: inline-block;
+    height: 25rem;
+    padding: 0.5%;
+    border: 10px solid white;
+}
+
+a {
+  color: white;
+}
+
+#instructions{
+  font-size: 2rem;
+}
+
+.allergic {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+/* Notes, look over @media syntax for responsiveness */
+/* Projects like levelground and Japanese Women's Society Projects */
+
+/* @media (min-width:412px) and (max-width: 769px) {
+
+iframe{
+  width: 800px;
+  height: 400px;
+}
+
+  .indexLeft {
+      width: 100%;
+      float: left;
+      display: block;
+    }
+
+  .indexRight {
+      width: 100%;
+      height: 500px;
+      float: left;
+      color: black;
+  }
+
+}
+
+@media only screen and (max-width: 411px) {
+
+  iframe{
+    width: 800px;
+    height: 400px;
+  }
+
+    .indexLeft {
+        width: 100%;
+        float: left;
+        display: block;
+      }
+
+    .indexRight {
+        width: 100%;
+        height: 500px;
+        float: left;
+        color: black;
+    }
+
+} */

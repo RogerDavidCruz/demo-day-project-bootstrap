@@ -1,0 +1,40 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Cefrax - Restaurant and Cafe
+    Description: Onepage Restaurant and Cafe Template
+    Author: chitrakootweb
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("plugins/bootstrap.min.css");
+
+/* == animate Headline == */
+@import url("plugins/animate.css");
+
+/* == fontawesome icon font == */
+@import url("plugins/fontawesome-all.min.css");
+
+/* == magnific-popup == */
+@import url("plugins/magnific-popup.css");
+
+/* == date-picker == */
+@import url("plugins/datepicker.css");
+
+/* == clock-picker == */
+@import url("plugins/clockpicker.css");
+
+/* == owl.carousel == */
+@import url("plugins/owl.carousel.min.css");
+@import url("plugins/owl.theme.default.min.css");
+
+/* == helper classes == */
+@import url("plugins/default.css");
+
+/* == mailform == */
+@import url("plugins/mailform.css");
