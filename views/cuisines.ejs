@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
 <head>
     <title>FooChoi</title>
@@ -18,28 +18,167 @@
     <div class="page-header text-center">
       <h1><span><i class="fas fa-utensils"></i></span> What do you wish to eat?</h1>
       <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-    </div>
+    </div> -->
 
+<% include profileHeaderLayout %>
 
-    <h3>Choose cuisine</h3>
+<!-- start gallery section -->
+    <section class="portfolio" data-scroll-index="5">
+        <div class="container-fluid padding-7px-lr">
 
-      <section class="tiles">
+            <div class="section-heading">
+                <div class="title-font font-size22 text-theme-color">Discover a culinary style</div>
+                <h3>Select A Cuisine To Start Cooking</h3>
+            </div>
 
-      <section class="innerTiles"><a href="/recipes/japanese"><img src="../img/japanese.jpg" alt="japense food" value="Japan"><span class="cuisineTitle">Japanese</span></a></section>
-      <section class="innerTiles"><a href="/recipes/mexican"><img src="../img/mexican.jpg" alt="mexican food" value = "Mexican"><span class="cuisineTitle">Mexican</span></a></section>
-      <section class="innerTiles"><a href="/recipes/thai"><img src="../img/thai.jpg" alt="thai food" value = "Thai"><span class="cuisineTitle">Thai</span></a></section>
-      <section class="innerTiles"><a href="/recipes/canadian"><img src="../img/canadian.jpg" alt="canadian food" value = "Canadian"><span class="cuisineTitle">Canadian</span></a></section>
-      <section class="innerTiles"><a href="/recipes/chinese"><img src="../img/chinese.jpg" alt="chinese food" value = "Chinese"><span class="cuisineTitle">Chinese</span></a></section>
-      <section class="innerTiles"><a href="/recipes/italian"><img src="../img/italian.jpg" alt="italian food" value = "Italian"><span class="cuisineTitle">Italian</span></a></section>
-      <section class="innerTiles"><a href="/recipes/american"><img src="../img/american.jpg" alt="american food" value = "American"><span class="cuisineTitle">American</span></a></section>
-      <section class="innerTiles"><a href="/recipes/indian"><img src="../img/indian.jpg" alt="indian food" value = "Indian"><span class="cuisineTitle">Indian</span></a></section>
-      <section class="innerTiles"><a href="/recipes/spanish"><img src="../img/spanish.jpg" alt="spanish food" value = "Spanish"><span class="cuisineTitle">Spanish</span></a></section>
+            <!-- gallery -->
+            <div class="row half-gutter xs-default-gutter gallery text-center width-100">
+
+                <!-- start gallery item -->
+                <div class="col-lg-3 col-md-4 col-sm-6 items">
+                    <div class="item-img">
+                        <img src="img0/portfolio/american.jpg" alt="image">
+                        <div class="item-img-overlay valign">
+                            <div class="overlay-info width-100 vertical-center">
+                                <a href="/recipes/american" class="popimg">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <h6>American</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end gallery item -->
+
+                <!-- start gallery item -->
+                <div class="col-lg-3 col-md-4 col-sm-6 items">
+                    <div class="item-img">
+                        <img src="img0/portfolio/canadian.jpg" alt="image">
+                        <div class="item-img-overlay valign">
+                            <div class="overlay-info width-100 vertical-center">
+                                <a href="/recipes/canadian" class="popimg">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <h6>Canadian</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end gallery item -->
+
+                <!-- start gallery item -->
+                <div class="col-lg-3 col-md-4 col-sm-6 items">
+                    <div class="item-img">
+                        <img src="img0/portfolio/chinese.jpg" alt="image">
+                        <div class="item-img-overlay valign">
+                            <div class="overlay-info width-100 vertical-center">
+                                <a href="/recipes/chinese" class="popimg">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <h6>Chinese</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end gallery item -->
+
+                <!-- start gallery item -->
+                <div class="col-lg-3 col-md-4 col-sm-6 items">
+                    <div class="item-img">
+                        <img src="img0/portfolio/indian.jpg" alt="image">
+                        <div class="item-img-overlay valign">
+                            <div class="overlay-info width-100 vertical-center">
+                                <a href="/recipes/indian" class="popimg">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <h6>Indian</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end gallery item -->
+
+                <!-- start gallery item -->
+                <div class="col-lg-3 col-md-4 col-sm-6 items">
+                    <div class="item-img">
+                        <img src="img0/portfolio/italian.jpg" alt="image">
+                        <div class="item-img-overlay valign">
+                            <div class="overlay-info width-100 vertical-center">
+                                <a href="/recipes/italian" class="popimg">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <h6>Italian</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end gallery item -->
+
+                <!-- start gallery item -->
+                <div class="col-lg-3 col-md-4 col-sm-6 items">
+                    <div class="item-img">
+                        <img src="img0/portfolio/japanese.jpg" alt="image">
+                        <div class="item-img-overlay valign">
+                            <div class="overlay-info width-100 vertical-center">
+                                <a href="/recipes/japanese" class="popimg">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <h6>Japanese</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end gallery item -->
+
+                <!-- start gallery item -->
+                <div class="col-lg-3 col-md-4 col-sm-6 items">
+                    <div class="item-img">
+                        <img src="img0/portfolio/mexican.jpg" alt="image">
+                        <div class="item-img-overlay valign">
+                            <div class="overlay-info width-100 vertical-center">
+                                <a href="/recipes/mexican" class="popimg">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <h6>Mexican</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end gallery item -->
+
+                <!-- start gallery item -->
+                <div class="col-lg-3 col-md-4 col-sm-6 items">
+                    <div class="item-img">
+                        <img src="img0/portfolio/spanish.jpg" alt="image">
+                        <div class="item-img-overlay valign">
+                            <div class="overlay-info width-100 vertical-center">
+                                <a href="/recipes/spanish" class="popimg">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <h6>Spanish</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end gallery item -->
+
+                <div class="clear-fix"></div>
+
+            </div>
+
+        </div>
 
     </section>
+    <!-- end gallery section -->
 
 
-  <script src="/main.js"></script>
+      <script src="/main.js"></script>
 
-</body>
+    </body>
 
-</html>
+    </html>
