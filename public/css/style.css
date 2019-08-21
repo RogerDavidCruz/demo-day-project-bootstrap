@@ -307,6 +307,17 @@ a:hover, a:active {
 ================================*/
 .smaller{
   width: 30%;
+  color: white;
+}
+
+.smaller h1{
+  color: white;
+}
+
+.littleOnes, .subText{
+  color:white;
+  font-size: 1rem;
+  margin-top: 20px;
 }
 
 .banner-headline {
