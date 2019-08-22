@@ -1,6 +1,9 @@
 <% include profileHeaderLayout %>
-<!-- start book-table section -->
-<section class="position-relative bg-black" data-scroll-index="4" data-overlay-dark="0" data-background="img/black_twill.png">
+
+<!-- <section id="entireScreen" class="position-relative bg-black" data-scroll-index="4" data-overlay-dark="0" data-background="img/black_twill.png"> -->
+<!-- start header -->
+
+<header class="header valign bg-img no-transition small-height-align mb-bg-position-x-center" data-scroll-index="0" data-overlay-dark="6" data-background="img/loginTest2.jpg" data-stellar-background-ratio="0.5">
 
   <div class="container">
 
@@ -14,7 +17,7 @@
             <h4 class="text-white opacity9">What are you allergic to?</h4>
           </div>
 
-          <form method="post" action="" class="mailform off2">
+          <form method="post" action="">
             <input type="hidden" name="form-type" value="contact">
             <div class="row">
               <div class="col-md-12">
@@ -22,36 +25,33 @@
               </div>
 
 
-              <div class="mfControls col-md-12">
-                <button type="submit" class="btn book-now btn-ingredient">Submit Allergy</button>
+              <div class="col-md-12">
+                <button  id="makeMargins" type="submit" class="btn book-now btn-ingredient">Submit Allergy</button>
               </div>
             </div>
-
           </form>
+
+          <div id="noPadding" class="section-heading left half col-md-12">
+            <h2 class="text-white opacity9">Let's Find A Cuisine</h2>
+            <a href="/cuisines"><button id="makeMargins" type="button" class="btn book-now">Food Choices</button></a>
+          </div>
 
         </div>
       </div>
 
       <div class="col-md-6">
-        <h2>Your Allergens</h2>
-        <ul>
+        <h2 class="whiter" >Your Allergens</h2>
           <% for(var i=0; i < foods.length; i++) {%>
-            <li class="food">
-              <a href="/foods/<%= foods[i] %>">
-                <span><%= foods[i] %></span></a>
-                <span class="trashIcon"><i id='<%= foods[i]._id %>' class="fa fa-trash" aria-hidden="true"></i></span>
+            <li class="food whiter">
+              <a class="whiter" href="/foods/<%= foods[i] %>">
+                <span class="whiter"><%= foods[i] %></span></a>
+                <span class="trashIcon whiter"><i id='<%= foods[i]._id %>' class="fa fa-trash whiter" aria-hidden="true"></i></span>
               </li>
               <% } %>
-            </ul>
           </div>
         </div>
       </div>
 
-
-
-
-    </section>
-    <!-- end book-table section -->
 
 
     <% include footerLayout %>

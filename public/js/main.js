@@ -8,7 +8,7 @@
     /* ----------------------------------
 
     JS Active Code Index
-            
+
         01. Preloader
         02. scrollIt
         03. Add Class Reveal for Scroll to Top
@@ -23,12 +23,12 @@
         12. Horizontal Tab
         13. window When Loading
         14. FullScreenHeight Resize function
-        15. OwlCarousel Slider 
+        15. OwlCarousel Slider
         16. Slider
         17. CountDown for coming soon page
 
-        
-    ---------------------------------- */    
+
+    ---------------------------------- */
 
 $(function() {
 
@@ -97,16 +97,16 @@ $(function() {
 
         if(bodyScroll > 100){
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/logo-dark.png');
-            darkbg.attr('src', 'img/logo-light.png');
+            logo.attr('src', '/img/logo-dark.png');
+            darkbg.attr('src', '/img/logo-light.png');
 
         }else{
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/logo-light.png');
-            navbloglogo.attr('src', 'img/logo-dark.png');
+            logo.attr('src', '/img/logo-light.png');
+            navbloglogo.attr('src', '/img/logo-dark.png');
         }
     });
-    
+
      var windowsize = wind.width();
         if (windowsize <= 991) {
         $('.navbar-nav .nav-link').on("click", function(){
@@ -118,7 +118,7 @@ $(function() {
     // Data background image
     var pageSection = $(".bg-img, section, footer");
     pageSection.each(function(indx){
-        
+
         if ($(this).attr("data-background")){
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
@@ -175,7 +175,7 @@ $(function() {
             });
         }
 
-        
+
     // === window When Loading === //
 
     $(window).on("load",function (){
@@ -228,7 +228,7 @@ $(function() {
 
     SetResizeContent();
 
-    // OwlCarousel Slider 
+    // OwlCarousel Slider
     $(document).on("ready", function() {
 
         var owl = $('.header .owl-carousel');

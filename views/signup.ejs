@@ -1,10 +1,10 @@
 <% include headerLayout %>
 
-  <div class="container">
+  <div class="container smaller">
 
 
 
-      <h1><span class="fa fa-sign-in"></span> Signup</h1>
+      <h1><span class="fa fa-sign-in"></span>Let's Get Started</h1>
 
       <% if (message.length > 0) { %>
         <div class="alert alert-danger"><%= message %></div>
@@ -28,8 +28,8 @@
           <button type="submit" class="btn btn-warning btn-lg">Signup</button>
         </form>
 
-        <p>Already have an account? <a href="/login">Login</a></p>
-        <p>Or go <a href="/">Home</a>.</p>
+        <p class="subText">Already have an account? <a class="littleOnes" href="/login">Login</a></p>
+        <p class="subText">Or go <a class="littleOnes" href="/">Home</a>.</p>
 
     </div>
 

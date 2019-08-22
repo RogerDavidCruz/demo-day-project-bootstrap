@@ -78,6 +78,15 @@ ul li { list-style: none; }
   text-overflow: ellipsis;
 }
 
+#colorChange{
+  color: white;
+}
+
+#entireScreen{
+  height: 100%;
+  width: 100%;
+}
+
 /* font family */
 .alt-font {font-family: 'Montserrat', sans-serif; font-weight: 500;}
 .main-font {font-family: 'Open Sans', sans-serif;}
