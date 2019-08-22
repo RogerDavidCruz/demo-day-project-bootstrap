@@ -48,6 +48,17 @@ Table of contents
   color: white;
 }
 
+#biggerText{
+  font-size: 1.5rem;
+}
+
+#pushUpward{
+  margin-bottom: 150px;
+}
+#colorWhite{
+  color: white;
+}
+
 #entireScreen{
   height: 100%;
   width: 100%;

@@ -5,7 +5,7 @@
 
 <header class="header valign bg-img no-transition small-height-align mb-bg-position-x-center" data-scroll-index="0" data-overlay-dark="6" data-background="img/loginTest2.jpg" data-stellar-background-ratio="0.5">
 
-  <div class="container">
+  <div id="pushUpward" class="container">
 
     <div class="row">
       <div class="col-md-6">
@@ -42,7 +42,7 @@
       <div class="col-md-6">
         <h2 class="whiter" >Your Allergens</h2>
           <% for(var i=0; i < foods.length; i++) {%>
-            <li class="food whiter">
+            <li id="biggerText" class="food whiter">
               <a class="whiter" href="/foods/<%= foods[i] %>">
                 <span class="whiter"><%= foods[i] %></span></a>
                 <span class="trashIcon whiter"><i id='<%= foods[i]._id %>' class="fa fa-trash whiter" aria-hidden="true"></i></span>

@@ -1,44 +1,7 @@
-<!-- <!doctype html>
-<html>
-<head>
-  <title>FooChoi</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <link rel="stylesheet" href="/style.css">
-</head>
-
-<body id="mealPage">
-  <h2><%= meal.strMeal %></h2>
-  <p id="instructions">Ingredients that have your allergen are highlighted in red.
-     Avoid this dish if you see any ingredient in red </p>
-  <ul>
-    <% console.log("allergens", allergens)
-    for(var i=1; i < 20; i++) {
-      const propertyName = "strIngredient"+i //creating a string, and find meal object, and
-      if(meal[propertyName]){  //does the ingredient exist in the list of ingredients of the meal , concanation
-        let allergic = allergens.find(function(allergen) { //check to see if the ingredient contains an allergen from the list
-          console.log(meal[propertyName], allergen, meal[propertyName].includes(allergen))
-          return meal[propertyName].toLowerCase().includes(allergen.toLowerCase())
-        })
-        console.log("allergic", allergic)
-        let className = ""
-        if(allergic){ //if allergic to this, change the className to allergic
-          className = 'allergic'
-        }
-        %>
-        <li class="meal <%= className %>">
-          <span><%= meal[propertyName]%><i class="fas fa-allergies"></i></span>
-        </li>
-        <% }
-      } %>
-    </ul>
-
-    <script src="/main.js"></script>
-  </body> -->
-
 <% include headerAllergicLayout %>
 
     <!-- start about section -->
-    <section data-scroll-index="1" data-overlay-dark="0" data-background="/img0/bg-section.jpg">
+    <section data-scroll-index="1" data-overlay-dark="0" data-background="/img/blackBackground.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-5">
@@ -47,11 +10,11 @@
                         <img src="/img0/new-about-story.jpg" alt="about story" class="border border-width-8 width-100 border-color-light-black" />
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-7 offset-xl-1 offset-lg-0">
+                <div id="colorWhite" class="col-xl-6 col-lg-7 offset-xl-1 offset-lg-0">
 
                     <div class="section-heading left half xs-margin-20px-bottom">
-                        <div class="title-font">Check Your</div>
-                        <h4>List of Ingredients</h4>
+                        <div id="colorWhite" class="title-font">Check Your</div>
+                        <h4 id="colorWhite">List of Ingredients</h4>
                     </div>
 
                     <p class="width-90 xs-width-100">A meal should be inclusive. My application considers your allergies and dietary preferances for meal prep recipes. It will allow you to get subsititues for your allergens.</p>
@@ -72,7 +35,7 @@
                           }
                           %>
                           <li class="meal <%= className %>">
-                            <span><%= meal[propertyName]%><i class="fas fa-allergies"></i></span>
+                            <span id="#biggerText"><%= meal[propertyName]%><i class="fas fa-allergies"></i></span>
                           </li>
                           <% }
                         } %>
