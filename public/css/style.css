@@ -62,6 +62,15 @@ Table of contents
   margin-top: 10px;
 }
 
+#redUnderline{
+  color: red;
+  text-decoration: underline;
+}
+
+#blackBackground{
+  background-color: #0d0d0d;
+}
+
 .loader {
   display: table-cell;
   vertical-align: middle;
@@ -1568,11 +1577,11 @@ h2.resp-accordion.resp-tab-active {
         color: #eb3007; }
   .portfolio .item-img-overlay {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    background: rgba(0, 0, 0, 0.85);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.60);
     color: #fff;
     opacity: 0;
     transition: all .5s;
