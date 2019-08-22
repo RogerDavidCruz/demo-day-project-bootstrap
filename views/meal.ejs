@@ -17,8 +17,8 @@
                         <h4 id="colorWhite">List of Ingredients</h4>
                     </div>
 
-                    <p class="width-90 xs-width-100">A meal should be inclusive. My application considers your allergies and dietary preferances for meal prep recipes. It will allow you to get subsititues for your allergens.</p>
-                    <p class="width-90 xs-width-100">FooChoi aims to connect the world, one meal at a time.</p>
+                    <p id="colorChange" class="width-90 xs-width-100">A meal should be inclusive. My application considers your allergies and dietary preferances for meal prep recipes. It will allow you to get subsititues for your allergens.</p>
+                    <p  id="colorChange" class="width-90 xs-width-100">Food Choice aims to connect the world, one meal at a time.</p>
                     <ul>
                       <% console.log("allergens", allergens)
                       for(var i=1; i < 20; i++) {
@@ -34,13 +34,13 @@
                             className = 'allergic'
                           }
                           %>
-                          <li class="meal <%= className %>">
+                          <li id="colorChange" class="meal <%= className %>">
                             <span id="biggerText"><%= meal[propertyName]%><i class="fas fa-allergies"></i></span>
                           </li>
                           <% }
                         } %>
                       </ul>
-                    <a href="javascript:void(0);" data-scroll-nav="4" class="btn">Find Alternatives</a>
+                    <a href="#" data-scroll-nav="4" class="btn">Find Alternatives</a>
 
                 </div>
             </div>

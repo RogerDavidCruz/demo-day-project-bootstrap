@@ -48,6 +48,10 @@ Table of contents
   color: white;
 }
 
+#changeBlack{
+  color: #666666;
+}
+
 #biggerText{
   font-size: 1.5rem;
 }
