@@ -44,6 +44,24 @@ Table of contents
   display: table;
   text-align: center; }
 
+#colorChange{
+  color: white;
+}
+
+#entireScreen{
+  height: 100%;
+  width: 100%;
+}
+
+#noPadding{
+  padding-left: 0px;
+  margin-top: 10px;
+}
+
+#makeMargins{
+  margin-top: 10px;
+}
+
 .loader {
   display: table-cell;
   vertical-align: middle;
@@ -318,6 +336,10 @@ a:hover, a:active {
   color:white;
   font-size: 1rem;
   margin-top: 20px;
+}
+
+.whiter{
+  color: white;
 }
 
 .banner-headline {
