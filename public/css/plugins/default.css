@@ -40,7 +40,7 @@ Table of contents
 ====================================== */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body{ font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:15px; color:#6b6b6b; font-weight: 400;line-height: 26px; }
+body{ font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:15px; color:#ffffff; font-weight: 400;line-height: 26px; }
 body, html { -moz-osx-font-smoothing: grayscale; }
 a, a:active, a:focus { color: #6f6f6f; text-decoration: none; transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -ms-transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s;  }
 a:hover, a:active{color: #232323; text-decoration: none;}
