@@ -26,7 +26,7 @@ module.exports = function(app, passport, db, ObjectId) {
     res.redirect('/');
   });
 
-  app.get('/cuisines', function(req, res){
+  app.get('/cuisines', isLoggedIn, function(req, res){
     res.render('cuisines.ejs')
   })
 
