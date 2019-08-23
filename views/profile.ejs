@@ -18,12 +18,16 @@
           </div>
 
           <form method="post" action="">
-            <input type="hidden" name="form-type" value="contact">
             <div class="row">
               <div class="col-md-12">
                 <input id="ingredient" type="text" name="name" placeholder="Your Allergy:" data-constraints="@LettersOnly @NotEmpty">
               </div>
-
+              <div class="col-md-12">
+                <label for="meat">Meat</label>
+                <input id="ingredient" type="checkbox" name="Meat">
+                <label for="meat">Nut</label>
+                <input id="ingredient" type="checkbox" name="Nut">
+              </div>
 
               <div class="col-md-12">
                 <button  id="makeMargins" type="submit" class="btn book-now btn-ingredient">Submit Allergy</button>
