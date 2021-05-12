@@ -1,6 +1,19 @@
-// config/database.js
-module.exports = {
+const mongoose = require("mongoose");
 
-    'url' : `mongodb+srv://${process.env.User_Name}:${process.env.User_Password}@cluster0-ieizd.mongodb.net/${process.env.DB_Name}?retryWrites=true&w=majority`,
-    'dbName': process.env.DB_NAME
+const connectDB = async () => {
+  try {
+    const conn = await mongoose.connect(process.env.DB_STRING, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false,
+      useCreateIndex: true,
+    });
+
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
 };
+
+module.exports = connectDB;
